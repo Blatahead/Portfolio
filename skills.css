@@ -13,7 +13,7 @@ html {
 
 body {
 	background-image: url("./sources/background.jpg");
-	background-size: cover;
+	background-size:cover;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -189,14 +189,14 @@ li{
 	transform: translate3d(-200%, 0, 0);
 }
 
-.navbar-logo{
-	transition-duration: 400ms;
-}
-
 a{
 	text-decoration: none;
 	font-weight: 700;
 	vertical-align: top;
+}
+
+.navbar-logo{
+	transition-duration: 400ms;
 }
 
 .navbar-logo:hover{
@@ -216,10 +216,10 @@ a{
 .skills-container{
 	position: absolute;
 	width: 80%;
-	height: 85%;
+	height: 100%;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-53%);
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 }
@@ -232,7 +232,10 @@ a{
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
+
 .Title h1 {
   position: relative;
   margin: 0;
@@ -243,25 +246,13 @@ a{
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+
 .Title__underline {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 2em;
   height: 3px;
   background-color: #17bdef;
-  z-index: 5;
-  transition: transform 580ms cubic-bezier(0.2, 0.1, 0.15, 1.32);
-}
-.Title__highlight {
-  position: absolute;
-  width: 100%;
-  bottom: -50;
-  left: 0;
-  height: 50px;
-  background-color: #43ffbe;
-  z-index: -1;
-  transition: transform 400ms ease;
 }
 .Title__filled {
   position: absolute;
@@ -272,17 +263,111 @@ a{
   top: 0;
   -webkit-clip-path: polygon(0% 100%, 0% 99%, 100% 99%, 100% 100%);
           clip-path: polygon(0% 100%, 0% 99%, 100% 99%, 100% 100%);
-  transition: -webkit-clip-path 600ms cubic-bezier(0.2, 0.1, 0.15, 1.32);
-  transition: clip-path 600ms cubic-bezier(0.2, 0.1, 0.15, 1.32);
-  transition: clip-path 600ms cubic-bezier(0.2, 0.1, 0.15, 1.32), -webkit-clip-path 600ms cubic-bezier(0.2, 0.1, 0.15, 1.32);
+  transition: -webkit-clip-path 650ms cubic-bezier(0.2, 0.1, 0.15, 1.32);
 }
+
 .Title:hover .Title__filled {
-  -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
-          clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+	-webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+			clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+  }
+
+.row{
+	display: none;
 }
-.Title:hover .Title__underline {
-  transform: translateY(-9em);
+
+@media only screen and (max-width: 930px) {
+	.navbar-nav {
+		position: fixed;
+		top: 13vh;
+		right: -100%;
+		width: 100%;
+		height: calc(100% - 13vh);
+		transition: all 0.3s ease;
+		background: #222;
+		z-index: 999;
+	}
+
+	.navbar-nav.active {
+		right: 0;
+	}
+
+	li {
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.toggle_btn {
+		position: absolute;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 20px;
+		height: 20px;
+		right: 5%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.toggle_btn span {
+		height: 2px;
+		background-color: #fff;
+	}
+
+	.toggle_btn.active span:nth-of-type(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.toggle_btn.active span:nth-of-type(2) {
+		opacity: 0;
+	}
+
+	.toggle_btn.active span:nth-of-type(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	.global-container{
+		margin-top: 13vh;
+		height: 100%;
+	}
+	.skills-container{
+		height: 100%;
+		transform: translateX(-50%) translateY(-58%);
+	}
 }
-.Title:hover .Title__highlight {
-  transform: translateY(-2.2em);
+
+@media only screen and (max-width: 430px){
+
+	body{
+		overflow-y: scroll;
+	}
+	.skills-container{
+		grid-template-columns: repeat(1,1fr);
+		transform: translateX(-50%) translateY(-50%);
+
+	}
+	.Title h1 {
+		font-size: 11vw;
+	  }
+	.Title__filled {
+		font-size: 11vw;
+	}
+	.row{
+		display: flex;
+		position: fixed;
+		right: 30px;
+		bottom: 30px;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #17bdef;
+	}
+	.icon{
+		height: 65%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:rotate(90deg) translateX(-45%) translateY(50%);
+	}
 }
