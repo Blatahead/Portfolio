@@ -372,11 +372,6 @@ a{
 		left: 50%;
 		transform:rotate(90deg) translateX(-45%) translateY(50%);
 	}
-	.navbar{
-		position: fixed;
-		position: absolute;
-		top: 0;
-	}
 	.navbar-nav{
 		right: -100%;
 	}

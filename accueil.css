@@ -221,6 +221,7 @@ a{
 	height: 87vh;
 	margin-top:13vh;
 	display: flex;
+	flex-direction: row;
 }
 
 .logo-container{
@@ -255,8 +256,93 @@ a{
 	text-decoration: none;
 	text-align: center;
 	color: #dad8d8;
-	font-size: 6vh;
+	font-size: 4vw;
 	padding: 2vh;
 	border-radius: 20px;
 	background: linear-gradient(-200deg, rgba(49, 186, 246), rgba(255,255,255,0) 10%, rgba(255,255,255,0) 90%, rgba(49, 186, 246))
+}
+
+@media only screen and (max-width: 930px) {
+	.navbar-nav {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		top: 13vh;
+		right: -100%;
+		width: 100%;
+		height: calc(100% - 13vh);
+		transition: all 0.3s ease;
+		background: #222;
+		z-index: 999;
+	}
+
+	.navbar-nav.active {
+		right: 0;
+	}
+
+	li {
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.toggle_btn {
+		position: absolute;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 20px;
+		height: 20px;
+		right: 5%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.toggle_btn span {
+		height: 2px;
+		background-color: #fff;
+	}
+
+	.toggle_btn.active span:nth-of-type(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.toggle_btn.active span:nth-of-type(2) {
+		opacity: 0;
+	}
+
+	.toggle_btn.active span:nth-of-type(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+}
+
+@media only screen and (max-width: 430px){
+	.home{
+		flex-direction: column;
+	}
+	.home div{
+		width: 100%;
+	}
+	.logo-container{
+		width: 100%;
+	}
+	.logo{
+		width: 55%;
+		margin-left: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+	.pres{
+		height: fit-content;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		font-size: 8vw;
+	}
+
 }
