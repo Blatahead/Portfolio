@@ -278,6 +278,8 @@ a{
 @media only screen and (max-width: 930px) {
 	.navbar-nav {
 		position: fixed;
+		display: flex;
+		flex-direction: column;
 		top: 13vh;
 		right: -100%;
 		width: 100%;
@@ -369,5 +371,13 @@ a{
 		top: 50%;
 		left: 50%;
 		transform:rotate(90deg) translateX(-45%) translateY(50%);
+	}
+	.navbar{
+		position: fixed;
+		position: absolute;
+		top: 0;
+	}
+	.navbar-nav{
+		right: -100%;
 	}
 }
