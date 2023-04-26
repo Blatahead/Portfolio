@@ -344,10 +344,34 @@ a{
 	body{
 		overflow-y: scroll;
 	}
+
+	.header{
+		height: 10vh;
+	}
+
+	.container{
+		height: 10vh;
+	}
+	.navbar{
+		height: 10vh;
+	}
+	.navbar-header{
+		height: fit-content;
+	}
+
+	.navbar-nav{
+		margin-top: -3vh;
+		height: 100%;
+	}
+
+	.global-container{
+		height: 100vh;
+	}
+
 	.skills-container{
 		grid-template-columns: repeat(1,1fr);
 		transform: translateX(-50%) translateY(-50%);
-
+		height: 100%;
 	}
 	.Title h1 {
 		font-size: 11vw;

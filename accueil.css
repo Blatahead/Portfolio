@@ -320,6 +320,26 @@ a{
 }
 
 @media only screen and (max-width: 430px){
+
+	.header{
+		height: 10vh;
+	}
+
+	.container{
+		height: 10vh;
+	}
+	.navbar{
+		height: 10vh;
+	}
+	.navbar-header{
+		height: fit-content;
+	}
+
+	.navbar-nav{
+		margin-top: -3vh;
+		height: 100%;
+	}
+
 	.home{
 		flex-direction: column;
 	}

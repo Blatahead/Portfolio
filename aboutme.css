@@ -405,6 +405,11 @@ a{
 		height: fit-content;
 	}
 
+	.navbar-nav{
+		margin-top: -3vh;
+		height: 100%;
+	}
+
 	.home{
 		flex-direction: column;
 		height: 90vh;
