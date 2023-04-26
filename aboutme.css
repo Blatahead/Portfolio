@@ -390,9 +390,27 @@ a{
 }
 
 @media only screen and (max-width: 430px){
+
+	.header{
+		height: 10vh;
+	}
+
+	.container{
+		height: 10vh;
+	}
+	.navbar{
+		height: 10vh;
+	}
+	.navbar-header{
+		height: fit-content;
+	}
+
 	.home{
 		flex-direction: column;
+		height: 90vh;
+		margin-top:10vh;
 	}
+
 	.home div{
 		width: 100%;
 	}
@@ -406,6 +424,11 @@ a{
 		top: 50%;
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
+		font-size: 4vw;
+	}
+
+	.aboutme{
+		height: 30%;
 	}
 
 	.aboutme_title{
