@@ -345,6 +345,48 @@ a{
 	.toggle_btn.active span:nth-of-type(3) {
 		transform: translateY(-8px) rotate(-45deg);
 	}
+
+	.aboutme_title{
+		font-size: 5vw;
+	}
+
+	.pres{
+		width: 30%;
+		font-size: 4vw;
+	}
+	.me{
+		font-size: 2vh;
+	}
+}
+
+@media only screen and (max-width: 690px) {
+	.me{
+		font-size: 1.9vh;
+	}
+}
+
+@media only screen and (max-width: 615px) {
+	.me{
+		font-size: 1.8vh;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.me{
+		font-size: 1.7vh;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.me{
+		font-size: 1.6vh;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.me{
+		font-size: 1.5vh;
+	}
 }
 
 @media only screen and (max-width: 430px){
@@ -365,13 +407,34 @@ a{
 		left: 50%;
 		transform: translateX(-50%) translateY(-50%);
 	}
+
+	.aboutme_title{
+		transform: translateY(-80%) translateX(-50%);
+	}
+
+	.aboutme_title{
+		width: 80%;
+		font-size: 6.5vw;
+	}
+
 	.pres{
 		height: fit-content;
 		position: absolute;
 		left: 50%;
-		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		top: 0%;
+		width: 80%;
+		padding-left: 20%;
+		transform: translateX(-50%) translateY(-10%);
 		font-size: 8vw;
 	}
 
+	.me{
+		width: 80%;
+		height: fit-content;
+		left: 50%;
+		top: 50%;
+		transform: translateX(-50%) translateY(-10%);
+		padding-bottom: 6vh;
+		font-size: 4vw;
+	}
 }
