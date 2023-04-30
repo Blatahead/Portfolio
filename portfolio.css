@@ -291,12 +291,13 @@ i {
 	font-weight: 700;
 	color: #fff;
 }
-.cards .card .fa-arrow-right {
+.cards .card .fa-arrow-right,
+.fa-download, .fa-link, .fa-image{
 	z-index: 100;
 	position: absolute;
-	right: 75px;
+	right: 10%;
 	bottom: 25px;
-	font-size: 40px;
+	font-size: 25px;
 	cursor: pointer;
 }
 
@@ -534,10 +535,11 @@ i {
 		height: 15px;
 		width: 15px;
 	}
-	.cards .card .fa-arrow-right{
+	.cards .card .fa-arrow-right,
+	.fa-download, .fa-link, .fa-image{
 		right:8%;
 		bottom: 5%;
-		font-size: 25px;
+		font-size: 15px;
 	}
 	
 }
