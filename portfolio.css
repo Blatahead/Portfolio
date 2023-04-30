@@ -231,8 +231,8 @@ i {
 }
 .cards .card {
 	position: relative;
-	width: 700px;
-	height: 300px;
+	width: 40vw;
+	height: 35vh;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: #fff;
@@ -251,6 +251,7 @@ i {
 	border-radius: 16px;
 	background-color: #E6E5E1;
 }
+
 .cards .card:after {
 	content: "";
 	z-index: 99;
@@ -263,6 +264,7 @@ i {
 	border-radius: 16px;
 	background-color: #E6E5E1;
 }
+
 .cards .card ul {
 	z-index: 99;
 	position: absolute;
@@ -270,6 +272,7 @@ i {
 	top: 5px;
 	list-style-type: none;
 }
+
 .cards .card ul li {
 	width: 2px;
 	height: 2px;
@@ -277,12 +280,13 @@ i {
 	margin: 6px 0;
 	background-color: #E6E5E1;
 }
+
 .cards .card h2 {
 	z-index: 99;
 	font-family: "Poppins", sans-serif;
 	position: absolute;
 	bottom: 0;
-	right: 130px;
+	right: 20%;
 	font-size: 60px;
 	font-weight: 700;
 	color: #fff;
@@ -300,9 +304,9 @@ i {
 	z-index: 99;
 	position: absolute;
 	top: 20px;
-	right: 70px;
+	right: 10%;
 	color: #333;
-	font-size: 100%;
+	font-size: 2vw;
 	writing-mode: vertical-lr;
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
@@ -310,8 +314,8 @@ i {
 
 .cards .card .pic {
 	z-index: 100;
-	width: 600px;
-	height: 300px;
+	width: 84%;
+	height: 100%;
 	background-image: url("./sources/pacman.jpg");
 	background-size: 100% 100%;
 	filter: grayscale(100%);
@@ -356,7 +360,7 @@ i {
 	font-size: 3rem;
 }
 .cards .card:hover button {
-	transform: scale(21);
+	transform: scale(24);
 }
 .cards .card:hover p {
 	color: #fff;
@@ -389,12 +393,159 @@ i {
 	background-color: #2b26c3;
 }
 
+@media only screen and (max-width: 1400px){
+	.cards .card{
+		height: 35vh;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	.cards .card{
+		height: 30vh;
+	}
+
+	.cards .card h2{
+		font-size: 50px;
+	}
+}
+
 @media only screen and (max-width: 1140px){
 	.cards{
 		margin-left: auto;
 		margin-right: auto;
-		width: 50%;
+		width: 70%;
 		grid-template-columns: repeat(1,1fr);
 	}
 
+	.cards .card{
+		width: 100%;
+		height: 40vh;
+		margin-top: 10vh;
+	}
+	.cards .card p {
+		font-size: 3vw;
+	}
+
+	.cards .card:hover button {
+		transform: scale(27);
+	}
 }
+
+@media only screen and (max-width: 930px) {
+	.navbar-nav {
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		top: 13vh;
+		right: -100%;
+		width: 100%;
+		height: calc(100% - 13vh);
+		transition: all 0.3s ease;
+		background: #222;
+		z-index: 999;
+	}
+
+
+	.navbar-nav.active {
+		right: 0;
+	}
+
+	li {
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	.toggle_btn {
+		position: absolute;
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 20px;
+		height: 20px;
+		right: 5%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.toggle_btn span {
+		height: 2px;
+		background-color: #fff;
+	}
+
+	.toggle_btn.active span:nth-of-type(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.toggle_btn.active span:nth-of-type(2) {
+		opacity: 0;
+	}
+
+	.toggle_btn.active span:nth-of-type(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+}
+
+@media only screen and (max-width: 800px){
+	.cards .card{
+		height: 30vh;
+	}
+
+	.cards .card:hover button {
+		transform: scale(24);
+	}
+}
+
+@media only screen and (max-width: 650px){
+	.cards .card h2{
+		font-size: 45px;
+	}
+	.cards .card p{
+		right: 9%;
+		font-size: 4vw;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.cards .card{
+		height: 25vh;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.cards .card{
+		height: 20vh;
+	}
+	.cards .card h2{
+		font-size: 35px;
+	}
+}
+
+@media only screen and (max-width: 450px){
+	.cards .card{
+		height: 15vh;
+	}
+	.cards .card h2{
+		font-size: 30px;
+	}
+	.cards .card button{
+		height: 15px;
+		width: 15px;
+	}
+	.cards .card .fa-arrow-right{
+		right:8%;
+		bottom: 5%;
+		font-size: 25px;
+	}
+	
+}
+
+@media only screen and (max-width: 300px){
+	.cards .card h2{
+		font-size: 20px;
+	}
+}
+
+/* 796 */
