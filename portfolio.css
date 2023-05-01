@@ -394,6 +394,14 @@ i {
 	background-color: #2b26c3;
 }
 
+.w11{
+	width: fit-content;
+	height: fit-content;
+	z-index: 102;
+	font-size: 25px;
+	cursor: pointer;
+}
+
 @media only screen and (max-width: 1400px){
 	.cards .card{
 		height: 35vh;
@@ -536,7 +544,7 @@ i {
 		width: 15px;
 	}
 	.cards .card .fa-arrow-right,
-	.fa-download, .fa-link, .fa-image{
+	.fa-download, .fa-link, .fa-image, .w11{
 		right:8%;
 		bottom: 5%;
 		font-size: 15px;
@@ -550,13 +558,3 @@ i {
 	}
 }
 
-.w11{
-	width: fit-content;
-	height: fit-content;
-	z-index: 102;
-	position: absolute;
-	right: 10%;
-	bottom: 25px;
-	font-size: 25px;
-	cursor: pointer;
-}
