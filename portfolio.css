@@ -293,12 +293,12 @@ i {
 }
 .cards .card .fa-arrow-right,
 .fa-download, .fa-link, .fa-image{
-	z-index: 100;
-	position: absolute;
-	right: 10%;
-	bottom: 25px;
-	font-size: 25px;
-	cursor: pointer;
+		z-index: 100;
+		position: absolute;
+		right: 10%;
+		bottom: 25px;
+		font-size: 25px;
+		cursor: pointer;
 }
 
 .cards .card p {
@@ -550,4 +550,13 @@ i {
 	}
 }
 
-/* 796 */
+.w11{
+	width: fit-content;
+	height: fit-content;
+	z-index: 102;
+	position: absolute;
+	right: 10%;
+	bottom: 25px;
+	font-size: 25px;
+	cursor: pointer;
+}
