@@ -1,0 +1,3 @@
+[submodule "eht"]
+	path = eht
+	url = https://github.com/Blatahead/Emotional-Heart-Thread.git
