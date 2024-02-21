@@ -1,66 +1,102 @@
-<!DOCTYPE html>
+<!-- 4 trucs a mettre
+	clé de douze
+	myfidcards
+	pacman
+	windows 11
+-->
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blatahead</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            margin: 0;
-            padding: 0;
-        }
-
-        .header {
-            background-color: #4caf50;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-
-        .content {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .skills-portfolio {
-            background-color: #ffffff;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .footer {
-            background-color: #4caf50;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-    </style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio | Blatahead</title>
+	<link rel="stylesheet" href="portfolio.css">
+	<link rel="icon" href="./sources/circle_blatahead_logo.png" type="image/icon type">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+	<script src="./main.js"></script>
+	<script src="https://kit.fontawesome.com/2556571ab1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <h1>Blatahead</h1>
-    </div>
-
-    <div class="content">
-        <h2>Accueil</h2>
-        <p>Bienvenue sur mon site !</p>
-
-        <div class="skills-portfolio">
-            <h2>A propos</h2>
-            <h3>Skills Portfolio</h3>
-            <p>Hello, Moi c'est Antonin. Bienvenue sur mon site !</p>
-        </div>
-    </div>
-
-    <div class="footer">
-        <p>Antonin &copy; 2022 20</p22>
-   </p> </div>
-    </
-</bodydiv>
-</>
+	<header class="header">
+		<div class="container">
+			<nav class="navbar">
+				<div class="navbar-header">
+					<a href="#" class="navbar-logo"><b>Blatahead</b></a> 
+				</div>
+				<div class="main-nav">
+					<ul class="navbar-nav" id="navbar-nav">
+						<li><a href="index.html" class="not" data-replace="Accueil"><span>Accueil</span></a></li>
+						<li><a href="aboutme.html" class="not" data-replace="A propos"><span>A propos</span></a></li>
+						<li><a href="skills.html" class="not" data-replace="Skills"><span>Skills</span></a></li>
+						<li><a href="#portfolio" class="yes" data-replace="Portfolio"><span>Portfolio</span></a></li>
+					</ul>
+					<div class="toggle_btn" onclick="BurgerTranslate()">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="cards">
+		<div class="card">
+			<h2>Pac Man</h2>
+			<i class="fas fa-download"></i>
+			<p>Python</p>
+			<div class="pic"></div>
+			<ul>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			</ul>
+			<button></button>
+		</div>
+		<div class="card card2">
+			<h2>Windows 11</h2>
+			<a class="w11" href="https://blatahead.github.io/NSI-1-re-Windows-11/" target="_blank"><i class="fas fa-link"></i></a>
+			<p>Html | Css</p>
+			<div class="pic"></div>
+			<ul>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			</ul>
+			<button></button>
+		</div>
+		<div class="card card3">
+			<h2>MyFidCards</h2>
+			<i class="fas fa-image"></i>
+			<p>Kotlin</p>
+			<div class="pic"></div>
+			<ul>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			</ul>
+			<button></button>
+		</div>
+		<div class="card card4">
+			<h2>Clé de douze</h2>
+			<i class="fas fa-link"></i>
+			<p>Javascript</p>
+			<div class="pic"></div>
+			<ul>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			</ul>
+			<button></button>
+		</div>
+		<div class="card card">
+			<h2>Emotional Heart Thread</h2>
+			<i class="fas fa-link"></i>
+			<p>Javascript</p>
+			<div class="pic"></div>
+			<ul>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+				<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			</ul>
+			<button></button>
+		</div>
+	</div>
 </body>
 </html>
